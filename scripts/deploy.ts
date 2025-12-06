@@ -4,6 +4,9 @@ async function main() {
     const FDC_ADDRESS = "0x0000000000000000000000000000000000000001";
     const CONDITION_ID = ethers.keccak256(ethers.toUtf8Bytes("TargetEvent"));
     const [deployer] = await ethers.getSigners();
+    if (!deployer) {
+        throw new Error("No deployer account found. Make sure you have set PRIVATE_KEY in .env file.");
+    }
     const recipient = deployer.address;
 
     console.log("Deploying contracts with the account:", deployer.address);
