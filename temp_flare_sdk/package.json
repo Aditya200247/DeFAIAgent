@@ -1,0 +1,31 @@
+{
+  "name": "@flarenetwork/flare-tx-sdk",
+  "version": "1.4.0",
+  "description": "Official SDK for generating and executing transactions on Flare Networks.",
+  "main": "dist/index.js",
+  "files": [
+    "/dist"
+  ],
+  "exports": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "homepage": "https://github.com/flare-foundation/flare-tx-sdk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flare-foundation/flare-tx-sdk"
+  },
+  "scripts": {
+    "build": "rm -rf dist/ && npx tsc -b && cp -r ./build/src ./dist && rm -rf build",
+    "test": "npx ts-node test/network",
+    "test_eip1193": "npx ts-node test/wallet/eip1193"
+  },
+  "author": "Flare Network",
+  "license": "MIT",
+  "dependencies": {
+    "@flarenetwork/flarejs": "^4.1.1",
+    "ethers": "^6.15.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

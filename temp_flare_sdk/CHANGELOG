@@ -1,0 +1,62 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+
+## [1.4.0] - 2025-11-26
+
+### Changed
+
+- P-chain transaction building in relation to dynamic fees.
+- Optional input parameter allocatedFeeOnP for functions transferToP and delegateOnP.
+
+
+## [1.3.0] - 2025-09-26
+
+### Added
+
+- Add validator on P-chain.
+- Method setAfterTxConfirmationCallback.
+
+### Changed
+
+- Fee percentage changed to delegation fee (a percentage in base points) in type Stake.
+- Methods for fetching stake information.
+
+
+## [1.2.1] - 2025-08-19
+
+### Changed
+
+- Fixed typo for IMPORT_P transaction type.
+
+
+## [1.2.0] - 2025-08-07
+
+### Added
+
+- Native P-chain transfer.
+- Reward claiming for rNat projects.
+- Voting on Flare foundation proposals.
+- Support for smart accounts.
+- Public key recovery from a submitted transaction in EIP-1193 based wallets.
+
+### Changed
+
+- P-chain transaction updates.
+
+
+## [1.1.0] - 2025-05-23
+
+### Added
+
+- Reward claiming.
+- Support for common wallets.
+
+
+## [1.0.0] - 2025-02-19
+
+### Added
+
+- Initial version.
